@@ -34,12 +34,12 @@ export default function HeroBanner() {
             {/* Nubes animadas con <img> nativo para animación */}
             <div
                 ref={cloudRef}
-                className="absolute bottom-10 md:-bottom-25 left-0 w-full pointer-events-none z-10"
+                className="absolute bottom-10 md:-bottom-35 left-0 w-full pointer-events-none z-10"
              >
             <img
                 src="/assets/clouds.svg"
                 alt="Nubes blancas"
-                className="w-full h-auto scale-[2] md:scale-100 transition-transform duration-300"
+                className="w-full h-auto scale-[2.2] md:scale-100 transition-transform duration-300"
             />
         </div>
 
