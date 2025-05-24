@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* define aquí tus tokens reutilizables */
+/* Aquí se define los tokens reutilizables */
 @theme {
   --font-poppins: 'Poppins', sans-serif;
   --color-verde:    #68A32F;
