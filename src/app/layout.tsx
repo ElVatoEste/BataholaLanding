@@ -1,8 +1,11 @@
 import type { Metadata } from "next"
+import React from "react";
 import "./globals.css"
 import { Poppins } from "next/font/google"
 import Navbar from "@/components/Navbar"
 import SmoothWrapper from "@/components/SmoothWrapper"
+
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({
     weight: ["400","500","600","700"],
@@ -29,6 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SmoothWrapper>
             <Navbar />
             {children}
+            <Footer />
         </SmoothWrapper>
         </body>
         </html>
