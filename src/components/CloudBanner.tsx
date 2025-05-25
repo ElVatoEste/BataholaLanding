@@ -2,17 +2,9 @@
 import { useEffect, useRef } from "react"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import {CloudBannerProps} from "@/interfaces/CloudBannerProps";
 
 gsap.registerPlugin(ScrollTrigger)
-
-interface CloudBannerProps {
-    /** Clases Tailwind para la altura del banner (ej. "h-[70vh] md:h-[80vh]") */
-    bannerHeightClasses?: string
-    /** Pixel final de movimiento en Y para las nubes (ej. 80) */
-    cloudY?: number
-    /** Clases Tailwind para posicionamiento de las nubes (ej. "bottom-5 md:bottom-20") */
-    cloudBottomClasses?: string
-}
 
 export default function CloudBanner({
                                         bannerHeightClasses = "h-[80vh] md:h-[90vh]",
