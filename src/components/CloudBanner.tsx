@@ -16,14 +16,6 @@ export default function CloudBanner({
     useEffect(() => {
         if (!cloudRef.current) return
 
-        const isMobile =
-            typeof window !== "undefined" &&
-            window.matchMedia("(max-width: 767px)").matches
-
-        if (isMobile) {
-            return
-        }
-
         gsap.to(cloudRef.current, {
             y: cloudY,
             ease: "power1.out",
@@ -46,13 +38,15 @@ export default function CloudBanner({
             {/* Nubes animadas */}
             <div
                 ref={cloudRef}
-                className={`absolute ${cloudBottomClasses} left-0 w-full pointer-events-none  z-10`}
+                className={`absolute ${cloudBottomClasses} left-0 w-full pointer-events-none z-10 overflow-hidden`}
             >
-                <img
-                    src="/assets/clouds.svg"
-                    alt="Nubes blancas"
-                    className="w-full h-auto scale-[2.0] md:scale-100 transition-transform duration-300"
-                />
+                <div className="relative max-md:w-[200%] max-md:left-[-50%]">
+                    <img
+                        src="/assets/clouds.svg"
+                        alt="Nubes blancas"
+                        className="w-full h-auto scale-100 transition-transform duration-300"
+                    />
+                </div>
             </div>
         </section>
     )
