@@ -9,12 +9,20 @@ gsap.registerPlugin(ScrollTrigger)
 export default function CloudBanner({
                                         bannerHeightClasses = "h-[80vh] md:h-[90vh]",
                                         cloudY = 100,
-                                        cloudBottomClasses = "bottom-10 md:-bottom-35",
+                                        cloudBottomClasses = "bottom-0",
                                     }: CloudBannerProps) {
     const cloudRef = useRef<HTMLDivElement>(null)
 
     useEffect(() => {
         if (!cloudRef.current) return
+
+        const isMobile =
+            typeof window !== "undefined" &&
+            window.matchMedia("(max-width: 767px)").matches
+
+        if (isMobile) {
+            return
+        }
 
         gsap.to(cloudRef.current, {
             y: cloudY,
@@ -38,12 +46,12 @@ export default function CloudBanner({
             {/* Nubes animadas */}
             <div
                 ref={cloudRef}
-                className={`absolute ${cloudBottomClasses} left-0 w-full pointer-events-none z-10`}
+                className={`absolute ${cloudBottomClasses} left-0 w-full pointer-events-none  z-10`}
             >
                 <img
                     src="/assets/clouds.svg"
                     alt="Nubes blancas"
-                    className="w-full h-auto scale-[2.2] md:scale-100 transition-transform duration-300"
+                    className="w-full h-auto scale-[2.0] md:scale-100 transition-transform duration-300"
                 />
             </div>
         </section>

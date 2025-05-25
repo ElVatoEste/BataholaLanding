@@ -17,7 +17,7 @@ export default function Home() {
     return (
         <main className="relative">
             <CloudBanner
-                bannerHeightClasses="h-[90vh] md:h-[80vh]"
+                bannerHeightClasses="h-[80vh] md:h-[100vh]"
             />
 
             <section className="relative z-[50] bg-white flex justify-center py-10">
@@ -25,9 +25,9 @@ export default function Home() {
                     <Image
                         src="/assets/CCBN_Hero.webp"
                         alt="Banner institucional del CCBN"
-                        width={1200}
-                        height={400}
-                        className="w-full h-auto"
+                        width={1024}
+                        height={520}
+                        className="w-auto h-full"
                         priority
                     />
                 </div>
