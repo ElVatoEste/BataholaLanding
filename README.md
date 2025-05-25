@@ -25,7 +25,7 @@ Este repositorio contiene la estructura, diseño y listados de tareas para el de
 │   ├── components
 │   │   ├── Navbar.tsx
 │   │   ├── SmoothWrapper.tsx
-│   │   ├── HeroBanner.tsx
+│   │   ├── CloudBanner.tsx
 │   │   └── Footer.tsx
 │   └── styles
 │       ├── tailwind.config.ts
@@ -40,7 +40,7 @@ Este repositorio contiene la estructura, diseño y listados de tareas para el de
 
 1. **INICIO** (`/`):
     - Header (Logo + Menú: INICIO, NOSOTROS, PROGRAMAS, CURSOS, NOVEDADES, CONTACTO)
-    - HeroBanner con GSAP + nube SVG con parallax
+    - CloudBanner con GSAP + nube SVG con parallax
     - Bloque “Valores” (Humanidad, Igualdad, Empoderamiento)
 
 
@@ -145,7 +145,7 @@ Este repositorio contiene la estructura, diseño y listados de tareas para el de
     - Animación de apertura (`scale-y`)
 
 
-- **HeroBanner** (`components/HeroBanner.tsx`)
+- **CloudBanner** (`components/CloudBanner.tsx`)
     - Texto responsivo (`text-3xl md:text-5xl`)
     - Nube SVG responsiva con escala móvil (`scale-[3] md:scale-100`)
     - Parallax GSAP (`ScrollTrigger`)

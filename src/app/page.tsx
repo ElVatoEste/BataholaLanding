@@ -1,11 +1,13 @@
-import HeroBanner from "@/components/HeroBanner"
+import CloudBanner from "@/components/CloudBanner"
 import Image from "next/image"
 import Valores from "@/components/home/Valores"
 
 export default function Home() {
     return (
         <main className="relative">
-            <HeroBanner/>
+            <CloudBanner
+                bannerHeightClasses="h-[90vh] md:h-[80vh]"
+            />
 
             <section className="relative z-[50] bg-white flex justify-center py-10">
                 <div className="bg-white inline-block overflow-hidden">

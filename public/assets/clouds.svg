@@ -4,15 +4,24 @@
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
 >
-    <circle cx="69.5" cy="133.5" r="133.5" fill="white" />
-    <circle cx="191.5" cy="142.5" r="74.5" fill="white" />
-    <circle cx="336.5" cy="192.5" r="117.5" fill="white" />
-    <circle cx="466.5" cy="192.5" r="96.5" fill="white" />
-    <circle cx="608.5" cy="230.5" r="96.5" fill="white" />
-    <circle cx="726.5" cy="192.5" r="106.5" fill="white" />
-    <circle cx="869.5" cy="235.5" r="106.5" fill="white" />
-    <circle cx="984.5" cy="192.5" r="115.5" fill="white" />
-    <circle cx="1149.5" cy="141.5" r="81.5" fill="white" />
-    <circle cx="1270.5" cy="154.5" r="81.5" fill="white" />
+
+    <circle cx="69.5"   cy="133.5" r="133.5" fill="white" />
+    <circle cx="191.5"  cy="142.5" r="74.5"  fill="white" />
+    <circle cx="336.5"  cy="192.5" r="117.5" fill="white" />
+    <circle cx="466.5"  cy="192.5" r="96.5"  fill="white" />
+    <circle cx="608.5"  cy="230.5" r="96.5"  fill="white" />
+    <circle cx="726.5"  cy="192.5" r="106.5" fill="white" />
+    <circle cx="869.5"  cy="235.5" r="106.5" fill="white" />
+    <circle cx="984.5"  cy="192.5" r="115.5" fill="white" />
+    <circle cx="1149.5" cy="141.5" r="81.5"  fill="white" />
+    <circle cx="1270.5" cy="154.5" r="81.5"  fill="white" />
     <circle cx="1389.5" cy="116.5" r="114.5" fill="white" />
+
+    <rect
+            x="0"
+            y="170"
+            width="1440"
+            height="172"
+            fill="white"
+    />
 </svg>
