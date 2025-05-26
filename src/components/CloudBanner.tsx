@@ -7,6 +7,7 @@ import {CloudBannerProps} from "@/interfaces/CloudBannerProps";
 gsap.registerPlugin(ScrollTrigger)
 
 export default function CloudBanner({
+                                        bannerText,
                                         bannerHeightClasses = "h-[80vh] md:h-[90vh]",
                                         cloudY = 100,
                                         cloudBottomClasses = "bottom-0",
@@ -32,7 +33,7 @@ export default function CloudBanner({
         <section className="relative bg-azul text-white text-center overflow-visible">
             {/* Banner dinámico */}
             <div className={`${bannerHeightClasses} flex items-center justify-center`}>
-                <h1 className="text-3xl md:text-5xl font-bold">BANNER</h1>
+                <h1 className="text-3xl md:text-5xl font-bold">{bannerText}</h1>
             </div>
 
             {/* Nubes animadas */}
