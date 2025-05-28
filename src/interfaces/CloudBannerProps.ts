@@ -1,10 +1,12 @@
+import {BannerColumn} from "@/interfaces/BannerColumn";
+
 export interface CloudBannerProps {
-    /** Clases Tailwind para la altura del banner (ej. "h-[70vh] md:h-[80vh]") */
+    /** Altura de la sección */
     bannerHeightClasses?: string
-    /** Pixel final de movimiento en Y para las nubes (ej. 80) */
+    /** Desplazamiento en Y de las nubes */
     cloudY?: number
-    /** Clases Tailwind para posicionamiento de las nubes (ej. "bottom-5 md:bottom-20") */
+    /** Posición bottom de las nubes */
     cloudBottomClasses?: string
-    /** Texto del banner */
-    bannerText: string;
+    /** Configuración de columnas dentro del banner */
+    columns?: BannerColumn[]
 }
