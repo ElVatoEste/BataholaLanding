@@ -17,5 +17,5 @@ body {
   overflow-x: hidden;
   font-family: var(--font-poppins), serif;
   background:   var(--color-azul);
-  color:        var(--color-blanco);
+  color:        var(--color-negro);
 }
