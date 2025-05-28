@@ -49,7 +49,7 @@ export default function Navbar() {
                         <li><Link href="/programas">Programas</Link></li>
                         <li><Link href="/cursos">Cursos</Link></li>
                         <li><Link href="/novedades">Novedades</Link></li>
-                        <li><Link href="/src/app/nosotros">Contacto</Link></li>
+                        <li><Link href="/contacto">Contacto</Link></li>
                     </ul>
                 </div>
             </nav>
@@ -68,7 +68,7 @@ export default function Navbar() {
                     <li><Link href="/programas" onClick={toggleMenu}>Programas</Link></li>
                     <li><Link href="/cursos" onClick={toggleMenu}>Cursos</Link></li>
                     <li><Link href="/novedades" onClick={toggleMenu}>Novedades</Link></li>
-                    <li><Link href="/src/app/nosotros" onClick={toggleMenu}>Contacto</Link></li>
+                    <li><Link href="/contacto" onClick={toggleMenu}>Contacto</Link></li>
                 </ul>
             </div>
         </header>

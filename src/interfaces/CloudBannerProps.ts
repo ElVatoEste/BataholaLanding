@@ -9,4 +9,6 @@ export interface CloudBannerProps {
     cloudBottomClasses?: string
     /** Configuración de columnas dentro del banner */
     columns?: BannerColumn[]
+
+    bannerText?: string
 }
