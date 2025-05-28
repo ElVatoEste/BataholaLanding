@@ -17,6 +17,7 @@ export default function Home() {
     return (
         <main className="relative">
             <CloudBanner
+                bannerText="Banner"
                 bannerHeightClasses="h-[80vh] md:h-[100vh]"
             />
 
