@@ -4,14 +4,17 @@ import CloudBanner from "@/components/CloudBanner"
 import { FaMapMarkerAlt, FaPhone, FaWhatsapp, FaClock, FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa'
 import React from "react";
 import FormContacto from "@/components/contacto/FormContacto";
+import FixLineGlitch from "@/components/FixLineGlitch"
 
 export default function Contacto() {
     return (
-        <main className="relative">
-            <CloudBanner
-                bannerText="Contáctanos"
-                bannerHeightClasses="h-[80vh] md:h-[90vh]"
-            />
+        <main>
+            <div className="relative">
+                <CloudBanner
+                    bannerText="Contáctanos"
+                    bannerHeightClasses="h-[80vh] md:h-[90vh]"
+                />
+            </div>
 
             {/* Sección de Información de Contacto (alineada a la izquierda) */}
             <section className="relative z-[50] bg-white text-black py-10">
@@ -31,6 +34,8 @@ export default function Contacto() {
                             </div>
                         </div>
                     </div>
+
+                    <FixLineGlitch/>
 
                     <div className="flex flex-col md:flex-row gap-8 md:gap-20 mt-20">
                         <div>
@@ -68,6 +73,8 @@ export default function Contacto() {
                 </div>
             </section>
 
+            <FixLineGlitch/>
+
             {/* Sección de Ubicación y Mapa (centrados) */}
             <section className="bg-white py-10">
                 <div className="container mx-auto px-4 md:px-6 max-w-6xl">
@@ -95,7 +102,7 @@ export default function Contacto() {
                 </div>
             </section>
 
-            <FormContacto />
+            <FormContacto/>
         </main>
     )
 }
