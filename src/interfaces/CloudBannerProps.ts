@@ -5,4 +5,6 @@ export interface CloudBannerProps {
     cloudY?: number
     /** Clases Tailwind para posicionamiento de las nubes (ej. "bottom-5 md:bottom-20") */
     cloudBottomClasses?: string
+    /** Texto del banner */
+    bannerText: string;
 }
