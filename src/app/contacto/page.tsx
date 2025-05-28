@@ -73,8 +73,6 @@ export default function Contacto() {
                 </div>
             </section>
 
-            <FixLineGlitch/>
-
             {/* Sección de Ubicación y Mapa (centrados) */}
             <section className="bg-white py-10">
                 <div className="container mx-auto px-4 md:px-6 max-w-6xl">
