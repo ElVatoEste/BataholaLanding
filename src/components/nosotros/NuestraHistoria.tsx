@@ -38,8 +38,8 @@ export default function NuestraHistoria() {
 
                         <p className="text-sm md:text-base lg:text-lg text-center md:text-left text-gris">
                             En agosto de 1983, se realizaron las primeras catequesis donde todos los niños, niñas y adolescentes
-                            lograron recibir su primera comunión. El Padre Ángel Torrellas formó un coro musical llamado "Coro de
-                            Niños de Batahola" conformado por alrededor de 80 integrantes quienes estudiaban música en la
+                            lograron recibir su primera comunión. El Padre Ángel Torrellas formó un coro musical llamado &#34;Coro de
+                            Niños de Batahola&#34; conformado por alrededor de 80 integrantes quienes estudiaban música en la
                             organización.
                         </p>
 
@@ -59,14 +59,14 @@ export default function NuestraHistoria() {
                     -bottom-40 -right-30 w-60 h-60
                     md:-bottom-44 md:-right-24 md:w-72 md:h-72
                     lg:-bottom-48 lg:-right-28 lg:w-80 lg:h-80
-                    xl:-bottom-40 xl:-right-35 xl:w-90 xl:h-90
+                    xl:-bottom-60 xl:-right-35 xl:w-100 xl:h-100
                     pointer-events-none
                   "
             >
                 <div
                     className="
                       w-full h-full rounded-full
-                      border-[15px] md:border-[20px] lg:border-[25px] xl:border-[35px]
+                      border-[15px] md:border-[20px] lg:border-[25px] xl:border-[40px]
                       border-verde opacity-90
                     "
                 />
