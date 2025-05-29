@@ -1,9 +1,9 @@
 "use client"
 
-import React, { useEffect, useRef } from "react"
+import { useEffect, useRef } from "react"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import { CloudBannerProps } from "@/interfaces/CloudBannerProps"
+import type { CloudBannerProps } from "@/interfaces/CloudBannerProps"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -16,7 +16,9 @@ export default function TextCloudBanner({
                                                     type: "text",
                                                     title: "¿QUIÉNES SOMOS?",
                                                     description:
-                                                        "Lorem ipsum dolor sit amet. Et odio nostrum sed provident harum qui enim suscipit ea autem voluptatem et reiciendis illo in libero voluptatum.",
+                                                        "En CCBN, somos un equipo de profesionales apasionados por impulsar el crecimiento de nuestros clientes. Nos especializamos en brindar soluciones integrales de consultoría y asesoramiento en diversas áreas clave para el éxito empresarial.",
+                                                    secondDescription:
+                                                        "Nuestra misión es clara: ser el socio estratégico que impulse a nuestros clientes hacia el logro de sus metas y la consolidación de su liderazgo en el mercado. Nos comprometemos a ofrecer servicios de la más alta calidad, adaptados a las necesidades específicas de cada cliente y respaldados por un equipo de expertos altamente capacitados.",
                                                 },
                                                 {
                                                     type: "image",
@@ -50,27 +52,20 @@ export default function TextCloudBanner({
           flex flex-col md:flex-row
           pt-[5%]
           items-start
-          px-6 md:px-50
+          px-15 md:px-20 lg:px-30 xl:px-40
         `}
             >
                 {/* Texto */}
                 {columns
                     .filter((c) => c.type === "text")
                     .map((col, i) => (
-
-                        <div key={i} className="md:w-1/2 space-y-4 md:space-y-6">
-                            {col.title && (
-                                <h2 className="text-3xl md:text-5xl font-bold">
-                                    {col.title}
-                                </h2>
+                        <div key={i} className="md:w-1/2 space-y-6 md:space-y-8 md:pr-8">
+                            {col.title && <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">{col.title}</h2>}
+                            {col.description && <p className="text-sm md:text-base lg:text-lg leading-relaxed">{col.description}</p>}
+                            {col.secondDescription && (
+                                <p className="text-sm md:text-base lg:text-lg leading-relaxed">{col.secondDescription}</p>
                             )}
-                            {col.description && (
-                                <p className="text-sm md:text-base leading-relaxed">
-                                    {col.description}
-                                </p>
-                            )}ygir
                         </div>
-
                     ))}
 
                 {/* Imagen circular */}
@@ -79,18 +74,19 @@ export default function TextCloudBanner({
                     .map((col, i) => (
                         <div
                             key={i}
-                            className="md:w-1/2 flex justify-center md:justify-end mt-8 md:mt-0"
+                            className="md:w-1/2 flex justify-center items-center md:justify-end md:items-start mt-8 md:mt-0"
                         >
                             {col.src ? (
                                 <img
-                                    src={col.src}
+                                    src={col.src || "/placeholder.svg"}
                                     alt={col.alt || ""}
-                                    className="w-40 h-40 md:w-120 md:h-120 rounded-full bg-gray-300 object-cover"
+                                    className="w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 xl:w-[26rem] xl:h-[26rem] rounded-full bg-gray-300 object-cover"
                                 />
                             ) : (
-                                <div className="w-40 h-40 md:w-60 md:h-60 rounded-full bg-gray-300" />
+                                <div className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full bg-gray-300"/>
                             )}
                         </div>
+
                     ))}
             </div>
 
@@ -100,11 +96,7 @@ export default function TextCloudBanner({
                 className={`absolute ${cloudBottomClasses} left-0 w-full pointer-events-none z-10 overflow-hidden`}
             >
                 <div className="relative max-md:w-[200%] max-md:-left-[50%]">
-                    <img
-                        src="/assets/clouds.svg"
-                        alt="Nubes blancas"
-                        className="w-full h-auto"
-                    />
+                    <img src="/assets/clouds.svg" alt="Nubes blancas" className="w-full h-auto"/>
                 </div>
             </div>
         </section>

@@ -12,7 +12,7 @@ export default function Navbar() {
 
     return (
         <header className="bg-white shadow-sm z-50 relative">
-            <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <nav className="mx-auto max-w-7xl px-4 sm:px-4 lg:px-8 xl:px-2">
                 <div className="flex h-20 items-center justify-between">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-3">
@@ -39,7 +39,7 @@ export default function Navbar() {
                         className="md:hidden text-3xl text-black"
                         aria-label="Toggle Menu"
                     >
-                        {menuOpen ? <HiX /> : <HiMenu />}
+                        {menuOpen ? <HiX/> : <HiMenu/>}
                     </button>
 
                     {/* Menú - Desktop */}

@@ -5,6 +5,8 @@ export interface BannerColumn {
     title?: string
     /** Para type="text": párrafo descriptivo */
     description?: string
+    /** Para type="text": segundo párrafo descriptivo */
+    secondDescription?: string
     /** Para type="image": URL de la imagen */
     src?: string
     /** Alt text para la imagen */

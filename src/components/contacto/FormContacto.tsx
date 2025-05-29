@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaChevronDown } from 'react-icons/fa'
-import EnviarButton from '@/components/Buttons/EnviarButton'
+import EnviarButton from '@/components/buttons/EnviarButton'
 
 export default function FormContacto() {
   return (
