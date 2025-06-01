@@ -60,7 +60,17 @@ export default function TextCloudBanner({
                     .filter((c) => c.type === "text")
                     .map((col, i) => (
                         <div key={i} className="md:w-1/2 space-y-6 md:space-y-8 md:pr-8">
-                            {col.title && <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">{col.title}</h2>}
+                            {col.title && (
+                                <h2
+                                    className="
+                                    text-3xl md:text-4xl lg:text-5xl
+                                    font-bold leading-tight
+                                    md:whitespace-nowrap
+                                    "
+                                >
+                                    {col.title}
+                                </h2>
+                            )}
                             {col.description && <p className="text-sm md:text-base lg:text-lg leading-relaxed">{col.description}</p>}
                             {col.secondDescription && (
                                 <p className="text-sm md:text-base lg:text-lg leading-relaxed">{col.secondDescription}</p>
@@ -74,7 +84,7 @@ export default function TextCloudBanner({
                     .map((col, i) => (
                         <div
                             key={i}
-                            className="md:w-1/2 flex justify-center items-center md:justify-end md:items-start mt-8 md:mt-0"
+                            className="md:w-1/2 flex justify-center items-center md:justify-end md:items-start mt-8 md:-mt-0"
                         >
                             {col.src ? (
                                 <img

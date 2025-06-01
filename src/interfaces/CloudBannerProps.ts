@@ -11,4 +11,6 @@ export interface CloudBannerProps {
     columns?: BannerColumn[]
 
     bannerText?: string
+
+    className?: string
 }
