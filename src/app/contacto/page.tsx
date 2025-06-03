@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import CloudBanner from "@/components/CloudBanner"
 import { FaMapMarkerAlt, FaPhone, FaWhatsapp, FaClock, FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa'
