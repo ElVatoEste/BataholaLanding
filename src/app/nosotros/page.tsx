@@ -1,5 +1,5 @@
 import React from "react";
-import TextCloudBanner from "@/components/TextCloudBanner";
+import TextCloudBanner from "@/components/general/TextCloudBanner";
 
 export default function Home() {
 

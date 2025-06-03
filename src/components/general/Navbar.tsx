@@ -15,7 +15,7 @@ export default function Navbar() {
             <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-20 items-center justify-between">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center gap-3">
+                    <Link href="/public" className="flex items-center gap-3">
                         <Image
                             src="/assets/logo.svg"
                             alt="Centro Cultural Batahola Norte"
@@ -68,7 +68,7 @@ export default function Navbar() {
                     <li><Link href="/programas" onClick={toggleMenu}>Programas</Link></li>
                     <li><Link href="/cursos" onClick={toggleMenu}>Cursos</Link></li>
                     <li><Link href="/novedades" onClick={toggleMenu}>Novedades</Link></li>
-                    <li><Link href="/src/app/nosotros" onClick={toggleMenu}>Contacto</Link></li>
+                    <li><Link href="/contacto" onClick={toggleMenu}>Contacto</Link></li>
                 </ul>
             </div>
         </header>

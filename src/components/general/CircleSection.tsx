@@ -1,6 +1,6 @@
 import React from "react";
 import { CirclesSectionProps } from "@/interfaces/CirclesSectionProps";
-import { Circle } from "@/components/Circle";
+import { Circle } from "@/components/general/Circle";
 
 export const CirclesSection: React.FC<CirclesSectionProps> = ({
                                                                   title,

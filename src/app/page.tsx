@@ -1,9 +1,9 @@
-import CloudBanner from "@/components/CloudBanner"
+import CloudBanner from "@/components/general/CloudBanner"
 import Image from "next/image"
 import Valores from "@/components/home/Valores"
 import React from "react";
-import {CirclesSection} from "@/components/CircleSection";
-import ImageSlider from "@/components/ImageSlider";
+import {CirclesSection} from "@/components/general/CircleSection";
+import ImageSlider from "@/components/general/ImageSlider";
 
 export default function Home() {
 
@@ -12,7 +12,6 @@ export default function Home() {
         "/img/img2.jpg",
         "/img/img3.jpg",
     ];
-
 
     return (
         <main className="relative">

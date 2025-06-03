@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import React from "react"
 import "./globals.css"
 import { Poppins } from "next/font/google"
-import ClientLayout from "@/components/ClientLayout"
+import ClientLayout from "@/components/general/ClientLayout"
 
 const poppins = Poppins({
     weight: ["400", "500", "600", "700"],

@@ -1,10 +1,10 @@
 'use client'
 
-import CloudBanner from "@/components/CloudBanner"
+import CloudBanner from "@/components/general/CloudBanner"
 import { FaMapMarkerAlt, FaPhone, FaWhatsapp, FaClock, FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa'
 import React from "react";
 import FormContacto from "@/components/contacto/FormContacto";
-import FixLineGlitch from "@/components/FixLineGlitch"
+import FixLineGlitch from "@/components/general/FixLineGlitch"
 
 export default function Contacto() {
     return (
